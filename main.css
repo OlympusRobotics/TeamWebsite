@@ -1,0 +1,28 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+body {
+    font-family: "Poppins", sans-serif !important;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin: auto
+}
+
+.center_horizontal {
+    display: flex;
+    justify-content: center;
+}
+
+.parallax {
+    background-image: url("robot.jpg");
+
+    min-height: 100vh;
+    opacity: .60;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
