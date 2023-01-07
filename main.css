@@ -16,7 +16,7 @@ body {
 }
 
 .parallax {
-    background-image: url("robot.jpg");
+    background-image: url("images/robot.jpg");
 
     min-height: 100vh;
     opacity: .60;

@@ -15,62 +15,76 @@
         }
 
         .nav {
-            background-color: rgba(0, 0, 0, .2);
+            background-color: rgba(0, 0, 0, .4);
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+            min-height: 10vh;
         }
 
         .custom-shadow:hover {
+
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .navbar-menu a {
+            color: white;
+            font-size: 17px;
         }
     </style>
 </head>
 
 <body>
-    <section class="hero is-medium is-link">
-        <div class="hero-body">
-          <p class="title is-1 center">
-            Support Us!
-          </p>
-      </section>
-
-      <div class="is-overlay">
-        <nav class="nav navbar is-transparent is-fixed-top">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="index.html">
-                    <img src="logo.png" style="border-radius: 5px; width: auto; max-height: 40px">
-                </a>
-            </div>
-
-            <div id="supergoodnavbar" class="navbar-menu">
-
-                <a class="navbar-item" href="sponsors.html">
-                    <button class="button is-dark">Sponsors</button>
-                </a>
 
 
-                <div class="navbar-end">
-                    <div class="navbar-item">
-                        <div class="field is-grouped">
-                            <p class="control">
-                                <a class="bd-tw-button button is-link" data-social-network="Twitter"
-                                    data-social-action="tweet" data-social-target="https://bulma.io" target="_blank"
-                                    href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
-                                    <span class="icon">
-                                        <i class="fab fa-twitter"></i>
-                                    </span>
-                                    <span>
-                                        Tweet
-                                    </span>
-                                </a>
-                            </p>
+
+    <div class="card" id="pagetop">
+        <div class="is-overlay">
+            <nav class="nav navbar is-transparent is-fixed-top">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="index.html">
+                        <img src="images/logo.png" style="border-radius: 5px; max-height: 60px">
+                    </a>
+                </div>
+
+                <div class="navbar-menu">
+                    <a class="navbar-item" href="index.html">
+                        Home
+                    </a>
+
+                    <a class="navbar-item" href="sponsors.html">
+                        Support Us
+                    </a>
+
+                    <div class="navbar-end">
+
+                        <div class="navbar-item">
+                            <div class="field is-grouped">
+                                <p class="control">
+                                    <a class="bd-tw-button button is-link"
+                                        href="https://www.instagram.com/4982_olympus_robotics/">
+                                        <span class="icon">
+                                            <i class="fab fa-instagram"></i>
+                                        </span>
+                                        <span>
+                                            Instagram
+                                        </span>
+                                    </a>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
+
     </div>
 
-</div>
+    <section class="hero is-link" style="height: 35vh">
+        <div class="hero-body center">
+            <p class="title is-1 center">
+                Support Us!
+            </p>
+        </div>
+    </section>
 
     <div class="container">
         <section class="section" style="padding-top:15vh">
@@ -83,30 +97,28 @@
                     <div class="column is-one-quarter center">
                         <div class="card custom-shadow">
                             <div class="card-content">
-                                <a href="/Sponsorship Packet.pdf">
-                                    <img src="blue_logo.png">
+                                <a href="content/Sponsorship Packet.pdf">
+                                    <img src="images/blue_logo.png">
                                 </a>
                             </div>
                             <footer class="card-footer">
                                 <p class="card-footer-item">
                                     <span>
-                                        <a href="/Sponsorship Packet.pdf">Sponsorship Packet.pdf</a>
+                                        <a href="content/Sponsorship Packet.pdf">Sponsorship Packet.pdf</a>
                                     </span>
                                 </p>
                             </footer>
                         </div>
                     </div>
-                    <div class="column is-one-quarter center">
 
-                    </div>
                 </div>
 
 
-                
+
                 <div style="padding-top: 10vh"></div>
 
                 <h1 class="title is-2 center">Current Sponsors</h1>
-                <div class="columns is-multiline is-centered" >
+                <div class="columns is-multiline is-centered">
 
                     <div class="column is-one-quarter ">
                         <div class="box custom-shadow center_horizontal">
@@ -196,7 +208,7 @@
                     <div class="column is-one-quarter">
                         <div class="box custom-shadow center_horizontal">
                             <a href="https://parrishorthodontics.com/">
-                                <img src="https://cdn-fmkgg.nitrocdn.com/wynriTplebKCuOSgkHBTGjqAYXMDNhYF/assets/static/optimized/rev-3a8101c/wp-content/uploads/2021/12/orthodontist.png"
+                                <img src="https://parrishorthodontics.com/wp-content/uploads/2021/12/orthodontist.png"
                                     alt="Sponsor 1 logo" class="image" style="width:auto; max-height:70px">
 
                             </a>
@@ -205,7 +217,7 @@
 
                     <div class="column is-one-quarter">
                         <div class="box custom-shadow center_horizontal" style="background-color:rgb(0,45,81)">
-                            <a href="https://parrishorthodontics.com/">
+                            <a href="https://www.epcomarineproducts.com/">
                                 <img src="https://www.epcomarineproducts.com/wp-content/uploads/2021/07/epco-marine-logo.svg"
                                     alt="Sponsor 1 logo" class="image" style="width:auto; max-height:70px">
 
@@ -294,7 +306,7 @@
         <div class="content has-text-centered">
             <p>
                 <strong>Olympus Robotics</strong>
-                <br> Copyright: yes.
+                <br> Copyright 2023
             </p>
         </div>
     </footer>

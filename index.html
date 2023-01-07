@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Olympus Robotics</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -15,13 +16,20 @@
         }
 
         .nav {
-            background-color: rgba(0, 0, 0, .2);
+            background-color: rgba(0, 0, 0, .4);
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+            min-height: 10vh;
         }
 
         .custom-shadow:hover {
 
             box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .navbar-menu a {
+            color: white;
+            font-size: 17px;
         }
     </style>
 </head>
@@ -31,7 +39,6 @@
     <div class="card" id="pagetop">
         <div class="card-image">
             <figure class="image" style="background-color: black; ">
-                <!--<img class="parallax" src="robot.jpg" style="width: 100vw;height: 100vh;object-fit: cover;">!-->
                 <div class="parallax"></div>
 
             </figure>
@@ -40,29 +47,31 @@
             <nav class="nav navbar is-transparent is-fixed-top">
                 <div class="navbar-brand">
                     <a class="navbar-item" href="#pagetop">
-                        <img src="logo.png" style="border-radius: 5px; width: auto; max-height: 40px">
+                        <img src="images/logo.png" style="border-radius: 5px; max-height: 60px">
                     </a>
                 </div>
 
-                <div id="supergoodnavbar" class="navbar-menu">
-
-                    <a class="navbar-item" href="sponsors.html">
-                        <button class="button is-dark">Sponsors</button>
+                <div class="navbar-menu">
+                    <a class="navbar-item" href="index.html">
+                        Home
                     </a>
 
+                    <a class="navbar-item" href="sponsors.html">
+                        Support Us
+                    </a>
 
                     <div class="navbar-end">
+
                         <div class="navbar-item">
                             <div class="field is-grouped">
                                 <p class="control">
-                                    <a class="bd-tw-button button is-link" data-social-network="Twitter"
-                                        data-social-action="tweet" data-social-target="https://bulma.io" target="_blank"
-                                        href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=https://bulma.io&amp;via=jgthms">
+                                    <a class="bd-tw-button button is-link"
+                                        href="https://www.instagram.com/4982_olympus_robotics/">
                                         <span class="icon">
-                                            <i class="fab fa-twitter"></i>
+                                            <i class="fab fa-instagram"></i>
                                         </span>
                                         <span>
-                                            Tweet
+                                            Instagram
                                         </span>
                                     </a>
                                 </p>
@@ -90,7 +99,7 @@
 
 
 
-    <section class="hero is-light">
+    <section class="hero">
         <div class="hero-body" style="display:block;">
             <p class="title center_horizontal is-4" style="font-weight: 100; padding-top: 15vh">
                 Check out our robotics team!
@@ -106,13 +115,11 @@
                         <strong>Our Team</strong>
                     </p>
                     <p class="is-size-5">
-                        Olympus Robotics is a vibrant and dedicated group of students, mentors,
-                        and volunteers who are driven by a passion for engineering and technology.
+                        Olympus Robotics is a dedicated group of students and mentors driven by a passion for engineering and technology.
                         Based in Fort Wayne, Indiana, we are a FRC team that is committed to using our
                         skills and knowledge to make a positive impact in our community and beyond.
 
-                        We have had the opportunity to learn and grow through the FRC, using the principles of science,
-                        technology, engineering, and math to build and program robots that are capable of tackling
+                        We have had the opportunity to learn and grow through FRC, using the principles of engineering to build and program robots that are capable of tackling
                         complex challenges. But our involvement in the FRC goes beyond just building robots - we are
                         also dedicated to giving back to the community through outreach and service projects.
 
@@ -121,16 +128,29 @@
                 </div>
 
                 <div class="column is-two-thirds">
-                    <img class="center" src="team.jfif" style="border-radius: 20px;">
+                    <img class="center" src="images/team.jfif" style="border-radius: 20px;">
                 </div>
 
             </div>
         </div>
     </section>
 
-
-
     <section class="hero is-light">
+        <div class="hero-body has-text-centered">
+            <img src="https://www.firstinspires.org/sites/all/themes/first/assets/images/2020/first-horz-rgb.png"
+                style="width:60vh">
+            <p class="title center_horizontal is-4" style="font-weight: 100; padding-top: 5vh">
+                We participate in the FIRST Robotics Competition. An yearly international high school robotics
+                competition.
+            </p>
+            <a href="https://www.firstinspires.org/robotics/frc">Learn More</a>
+
+            
+        </div>
+    </section>
+
+
+    <section class="hero">
         <div class="hero-body center">
             <div class="container">
                 <a class="center_horizontal" href="https://form.jotform.com/223425061392147" target="_blank">
@@ -138,10 +158,10 @@
                 </a>
                 <div class="columns is-flex align-items-stretch " style="padding-top: 10vh;">
 
-                    <div class="column ">
+                    <div class="column">
                         <a href="https://form.jotform.com/223425061392147">
                             <div class="box custom-shadow" style="height: 300px">
-                                <img src="store1.PNG" style="max-height: 250px; width: auto;">
+                                <img src="images/store1.PNG" style="max-height: 250px; width: auto;">
                             </div>
                         </a>
                     </div>
@@ -149,7 +169,7 @@
                     <div class="column">
                         <a href="https://form.jotform.com/223425061392147">
                             <div class="box custom-shadow" style="height: 300px">
-                                <img src="store2.PNG">
+                                <img src="images/store2.PNG">
                             </div>
                         </a>
                     </div>
@@ -157,7 +177,7 @@
                     <div class="column">
                         <a href="https://form.jotform.com/223425061392147">
                             <div class="box custom-shadow" style="height: 300px">
-                                <img src="store4.PNG">
+                                <img src="images/store4.PNG">
                             </div>
                         </a>
                     </div>
@@ -165,24 +185,21 @@
                     <div class="column">
                         <a href="https://form.jotform.com/223425061392147">
                             <div class="box custom-shadow" style="height: 300px">
-                                <img src="store5.PNG">
+                                <img src="images/store5.PNG">
                             </div>
                         </a>
                     </div>
-
-
                 </div>
             </div>
         </div>
     </section>
 
 
-
     <footer class="footer">
         <div class="content has-text-centered">
             <p>
                 <strong>Olympus Robotics</strong>
-                <br> Copyright: yes.
+                <br> Copyright 2023
             </p>
         </div>
     </footer>
