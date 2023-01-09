@@ -2,7 +2,7 @@
   "name": "teamwebsite",
   "version": "1.0.0",
   "description": "A website for our robotics team.",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
