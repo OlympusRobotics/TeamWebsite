@@ -1,0 +1,22 @@
+{
+  "name": "teamwebsite",
+  "version": "1.0.0",
+  "description": "A website for our robotics team.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlympusRobotics/TeamWebsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OlympusRobotics/TeamWebsite/issues"
+  },
+  "homepage": "https://github.com/OlympusRobotics/TeamWebsite#readme",
+  "dependencies": {
+    "flamethrower-router": "^0.0.0-meme.12"
+  }
+}
