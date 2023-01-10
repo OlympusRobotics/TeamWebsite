@@ -33,9 +33,11 @@
         }
     </style>
     <script type="module" src="index.js"></script>
+    
 </head>
 
 <body>
+    
 
     <div class="card" id="pagetop">
         <div class="card-image">
@@ -50,19 +52,30 @@
                     <a class="navbar-item" href="#pagetop">
                         <img src="images/logo.png" style="border-radius: 5px; max-height: 60px">
                     </a>
+
+
+                    <a role="button" class="center_horizontal navbar-burger burger nav-toggle" id="burger" onclick="toggleBurger()" style="width:10vh; height:10vh">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
                 </div>
 
-                <div class="navbar-menu">
-                    <a class="navbar-item" href="index.html">
-                        Home
-                    </a>
 
-                    <a class="navbar-item" href="sponsors.html">
-                        Sponsorship
-                    </a>
 
+                <div class="navbar-menu nav-menu" style="background-color: rgba(0, 0, 0, 0);">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="index.html">
+                            Home
+                        </a>
+
+                        <a class="navbar-item" href="sponsors.html">
+                            Sponsorship
+                        </a>
+
+
+                    </div>
                     <div class="navbar-end">
-
                         <div class="navbar-item">
                             <div class="field is-grouped">
                                 <p class="control">
@@ -81,6 +94,7 @@
                     </div>
                 </div>
             </nav>
+
         </div>
 
     </div>
@@ -116,19 +130,21 @@
                         <strong>Our Team</strong>
                     </p>
                     <p class="is-size-5">
-                        Olympus Robotics is a dedicated group of students and mentors driven by a passion for engineering and technology.
+                        Olympus Robotics is a dedicated group of students and mentors driven by a passion for
+                        engineering and technology.
                         Based in Fort Wayne, Indiana, we are a FRC team that is committed to using our
                         skills and knowledge to make a positive impact in our community and beyond.
 
-                        We have had the opportunity to learn and grow through FRC, using the principles of engineering to build and program robots that are capable of tackling
+                        We have had the opportunity to learn and grow through FRC, using the principles of engineering
+                        to build and program robots that are capable of tackling
                         complex challenges. But our involvement in the FRC goes beyond just building robots - we are
                         also dedicated to giving back to the community through outreach and service projects.
-                        
+
                     </p>
                     <div style="padding-top: 5vh">
-                        <a class="is-link button is-size-5" href="/sponsors.html" >Support Us</a>
+                        <a class="is-link button is-size-5" href="/sponsors.html">Support Us</a>
                     </div>
-                    
+
                 </div>
 
                 <div class="column is-two-thirds">
@@ -149,7 +165,7 @@
             </p>
             <a href="https://www.firstinspires.org/robotics/frc">Learn More</a>
 
-            
+
         </div>
     </section>
 
@@ -208,6 +224,7 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="/burger.js"></script>
 </body>
 
 </html>

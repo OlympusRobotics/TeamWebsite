@@ -41,22 +41,33 @@
         <div class="is-overlay">
             <nav class="nav navbar is-transparent is-fixed-top">
                 <div class="navbar-brand">
-                    <a class="navbar-item" href="index.html">
+                    <a class="navbar-item" href="#pagetop">
                         <img src="images/logo.png" style="border-radius: 5px; max-height: 60px">
+                    </a>
+
+
+                    <a role="button" class="navbar-burger burger nav-toggle" id="burger" onclick="toggleBurger()">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </a>
                 </div>
 
-                <div class="navbar-menu">
-                    <a class="navbar-item" href="index.html">
-                        Home
-                    </a>
 
-                    <a class="navbar-item" href="sponsors.html">
-                        Sponsorship
-                    </a>
 
+                <div class="navbar-menu nav-menu" style="background-color: rgba(0, 0, 0, 0);">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="index.html">
+                            Home
+                        </a>
+
+                        <a class="navbar-item" href="sponsors.html">
+                            Sponsorship
+                        </a>
+
+
+                    </div>
                     <div class="navbar-end">
-
                         <div class="navbar-item">
                             <div class="field is-grouped">
                                 <p class="control">
@@ -75,6 +86,7 @@
                     </div>
                 </div>
             </nav>
+
         </div>
 
     </div>
@@ -312,6 +324,7 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="/burger.js"></script>
 </body>
 
 </html>
