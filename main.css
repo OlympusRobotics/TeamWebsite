@@ -4,6 +4,31 @@ body {
     font-family: "Poppins", sans-serif !important;
 }
 
+@media only screen and (max-width: 600px) {
+    .is-size-5 {
+      margin-inline: -3rem;
+    }
+  }
+
+.shop { 
+    height:300px;
+    min-width:255px;
+    width:max-content;
+}
+
+.teamphoto {
+    border-radius: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .teamphoto {
+        border-radius: 20px;
+        width:120%;
+        margin-left: 0px !important;
+        margin-right: 0px !important;
+    }
+  }
+
 .center {
     display: flex;
     justify-content: center;
