@@ -32,12 +32,22 @@
             color: white;
             font-size: 17px;
         }
+
+        .loading-bar {
+            position: fixed;
+            top: 0;
+            width: 0%;
+            height: 4px;
+            background-color: yellow;
+            z-index: 2;
+        }
     </style>
     <script type="module" src="index.js"></script>
     
 </head>
 
 <body>
+    <div id="load" class="loading-bar"></div>
     <div class="card" id="pagetop">
         <div class="card-image">
             <figure class="image" style="background-color: black; ">

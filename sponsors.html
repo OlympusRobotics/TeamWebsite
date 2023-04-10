@@ -30,14 +30,22 @@
             color: white;
             font-size: 17px;
         }
+
+        .loading-bar {
+            position: fixed;
+            top: 0;
+            width: 0%;
+            height: 4px;
+            background-color: yellow;
+            z-index: 2;
+        }
     </style>
     <script type="module" src="index.js"></script>
 </head>
 
 
 <body>
-
-
+    <div id="load" class="loading-bar"></div>
     <div class="card" id="pagetop">
         <div class="is-overlay">
             <nav class="nav navbar is-transparent is-fixed-top">
@@ -125,7 +133,7 @@
         <section class="section" style="padding-top:15vh">
             <div>
 
-                <div class="columns is-multiline is-centered is-vcentered">
+                <div class="columns is-multiline is-centered ">
                     <div class="column is-one-quarter center">
                         <h1 class="title is-2 center">Sponsorship Resources</h1>
                     </div>
@@ -169,7 +177,7 @@
                 <div style="padding-top: 10vh"></div>
 
                 <h1 class="title is-2 center">Current Sponsors</h1>
-                <div class="columns is-multiline is-centered">
+                <div class="columns is-multiline is-centered is-vcentered">
 
                     <div class="column is-one-quarter ">
                         <div class="box custom-shadow center_horizontal">
