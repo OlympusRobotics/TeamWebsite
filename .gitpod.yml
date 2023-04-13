@@ -6,9 +6,8 @@
 
 tasks:
   - name: Install Parcel
-  - command: npm i --global parcel
-  - name: NPM Install
-  - command: npm i
-  - name: Run
-  - command: parcel index.html
+  - command: npm i --global parcel &&
+             npm i                 &&
+             parcel index.html
+             
 
