@@ -5,6 +5,10 @@
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 tasks:
-  - init: npm install
-
+  - name: Install Parcel
+  - command: npm i --global parcel
+  - name: NPM Install
+  - command: npm i
+  - name: Run
+  - command: parcel index.html
 

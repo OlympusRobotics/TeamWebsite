@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Olympus Robotics</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="main.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .nav {
+            background-color: rgba(0, 0, 0, .4);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+            min-height: 10vh;
+        }
+
+        .custom-shadow:hover {
+
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+
+        }
+
+        .navbar-menu a {
+            color: white;
+            font-size: 17px;
+        }
+
+        .loading-bar {
+            position: fixed;
+            top: 0;
+            width: 0%;
+            height: 4px;
+            background-color: yellow;
+            z-index: 2;
+        }
+        .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    </style>
+    <script type="module" src="index.js"></script>
+    
+</head>
+
+<body>
+    <div id="load" class="loading-bar"></div>
+    <div class="card" id="pagetop">
+        <div class="is-overlay">
+            <nav class="nav navbar is-transparent is-fixed-top">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="#pagetop">
+                        <img src="images/logo.png" style="border-radius: 5px; max-height: 60px">
+                    </a>
+
+
+                    <a role="button" class="navbar-burger burger nav-toggle" onclick="toggleBurger()" aria-label="menu" aria-expanded="false" style="width:10vh; height:10vh">  
+                        <span aria-hidden="true" style="color:white"></span>
+                        <span aria-hidden="true" style="color:white"></span>
+                        <span aria-hidden="true" style="color:white"></span>
+                    </a>
+                </div>
+
+
+
+                <div class="navbar-menu nav-menu" style="background-color: rgba(0, 0, 0, 0);">
+                    <div class="navbar-start">
+                        <a class="navbar-item" href="index.html">
+                            Home
+                        </a>
+
+                        <a class="navbar-item" href="sponsors.html">
+                            Sponsorship
+                        </a>
+                        <a class="navbar-item" href="join.html">
+                            Join Us!
+                        </a>
+
+
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="field is-grouped">
+                                <p class="control">
+                                    <a class="bd-tw-button button is-link"
+                                        href="https://www.instagram.com/4982_olympus_robotics/">
+                                        <span class="icon">
+                                            <i class="fab fa-instagram"></i>
+                                        </span>
+                                        <span>
+                                            Instagram
+                                        </span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                                                <div class="navbar-item">
+                            <div class="field is-grouped">
+                                <p class="control">
+                                    <a data-cold 
+                                        class="bd-tw-button button is-danger"
+                                        href="https://www.youtube.com/@olympusrobotics4982">
+                                        <span class="icon">
+                                            <i class="fab fa-youtube"></i>
+                                        </span>
+                                        <span>
+                                           Youtube 
+                                        </span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-item">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <a data-cold 
+                                    class="bd-tw-button button is-dark"
+                                    href="https://github.com/OlympusRobotics">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>
+                                        Github
+                                    </span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
