@@ -1,144 +1,333 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Olympus Robotics</title>
-    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="icon" type="image/x-icon" href="images/logo.png" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
     <!-- <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="main.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
+      html {
+        scroll-behavior: smooth;
+      }
 
-        .nav {
-            background-color: rgba(0, 0, 0, .4);
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
-            min-height: 10vh;
-        }
+      .nav {
+        background-color: rgba(0, 0, 0, 0.4);
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        min-height: 10vh;
+      }
 
-        .custom-shadow:hover {
+      .custom-shadow:hover {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+      }
 
-            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.4);
+      .navbar-menu a {
+        color: white;
+        font-size: 17px;
+      }
 
-        }
-
-        .navbar-menu a {
-            color: white;
-            font-size: 17px;
-        }
-
-        .loading-bar {
-            position: fixed;
-            top: 0;
-            width: 0%;
-            height: 4px;
-            background-color: yellow;
-            z-index: 2;
-        }
-        .embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+      .loading-bar {
+        position: fixed;
+        top: 0;
+        width: 0%;
+        height: 4px;
+        background-color: yellow;
+        z-index: 2;
+      }
+      .embed-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+      }
+      .embed-container iframe,
+      .embed-container object,
+      .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     </style>
     <script type="module" src="index.js"></script>
-    
-</head>
+  </head>
 
-<body>
+  <body>
+    <!--Alpine js-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+
     <div id="load" class="loading-bar"></div>
     <div class="card" id="pagetop">
-        <div class="is-overlay">
-            <nav class="nav navbar is-transparent is-fixed-top">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="#pagetop">
-                        <img src="images/logo.png" style="border-radius: 5px; max-height: 60px">
+      <div class="is-overlay">
+        <nav class="nav navbar is-transparent is-fixed-top">
+          <div class="navbar-brand">
+            <a class="navbar-item" href="#pagetop">
+              <img
+                src="images/logo.png"
+                style="border-radius: 5px; max-height: 60px"
+              />
+            </a>
+
+            <a
+              role="button"
+              class="navbar-burger burger nav-toggle"
+              onclick="toggleBurger()"
+              aria-label="menu"
+              aria-expanded="false"
+              style="width: 10vh; height: 10vh"
+            >
+              <span aria-hidden="true" style="color: white"></span>
+              <span aria-hidden="true" style="color: white"></span>
+              <span aria-hidden="true" style="color: white"></span>
+            </a>
+          </div>
+
+          <div
+            class="navbar-menu nav-menu"
+            style="background-color: rgba(0, 0, 0, 0)"
+          >
+            <div class="navbar-start">
+              <a class="navbar-item" href="index.html"> Home </a>
+
+              <a class="navbar-item" href="sponsors.html"> Sponsorship </a>
+              <a class="navbar-item" href="join.html"> Join Us! </a>
+            </div>
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a
+                      class="bd-tw-button button is-link"
+                      href="https://www.instagram.com/4982_olympus_robotics/"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-instagram"></i>
+                      </span>
+                      <span> Instagram </span>
                     </a>
-
-
-                    <a role="button" class="navbar-burger burger nav-toggle" onclick="toggleBurger()" aria-label="menu" aria-expanded="false" style="width:10vh; height:10vh">  
-                        <span aria-hidden="true" style="color:white"></span>
-                        <span aria-hidden="true" style="color:white"></span>
-                        <span aria-hidden="true" style="color:white"></span>
+                  </p>
+                </div>
+              </div>
+              <div class="navbar-item">
+                <div class="field is-grouped">
+                  <p class="control">
+                    <a
+                      data-cold
+                      class="bd-tw-button button is-danger"
+                      href="https://www.youtube.com/@olympusrobotics4982"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-youtube"></i>
+                      </span>
+                      <span> Youtube </span>
                     </a>
+                  </p>
                 </div>
+              </div>
+            </div>
+            <div class="navbar-item">
+              <div class="field is-grouped">
+                <p class="control">
+                  <a
+                    data-cold
+                    class="bd-tw-button button is-dark"
+                    href="https://github.com/OlympusRobotics"
+                  >
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span> Github </span>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <section class="hero is-dark pb-6">
+      <div class="hero-body center">
+        <div style="margin-top: 10vh">
+          <p class="title is-1">Join Us!</p>
+          <p class="subtitle">
+            We are always looking for more bright students and mentors who are
+            passionate about robotics.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="hero is-fullheight is-light has-text-centered">
+      <hr />
+      <div class="columns is-centered p-6">
+        <div class="column is-half">
+          <h1 class="title is-3">For Students</h1>
+          <p class="has-text-weight-medium is-size-5">
+            Are you a student at Homestead High School and interested in joining
+            the team? Message us or come to our pizza callout meeting at the
+            start of the school year. We can't wait to see what you can bring to
+            the table. Joining our team will allow you to work alongside other
+            passionate and talented individuals who share your interest in
+            robotics, media, business, and much more. As a member of our team,
+            you'll have the chance to work on exciting projects, develop your
+            technical and teamwork skills, and compete in FRC robotics
+            competitions. You'll also have the opportunity to network with
+            professionals in the field and learn from experienced mentors who
+            are dedicated to helping you succeed. Whether you're experienced or
+            just getting started, our team has a place for you. We welcome
+            individuals with diverse backgrounds and skill sets, and we're
+            committed to providing a supportive and inclusive environment where
+            everyone can thrive. So if you're ready to take your robotics skills
+            to the next level and be a part of an amazing team, we encourage you
+            to join us today!
+          </p>
+        </div>
+        <div class="column is-half">
+          <h1 class="title is-3">For Mentors</h1>
+          <p class="has-text-weight-medium is-size-5">
+            As a mentor, you'll have the chance to work closely with our team
+            and help guide them through the design, build, and competition
+            phases of the FRC season. You'll have the opportunity to share your
+            insights and experiences, offer feedback and advice, and help our
+            team members develop their skills and reach their full potential.
+            Your contributions as a mentor can make a tremendous impact on our
+            team, and we're grateful for your willingness to share your time and
+            expertise with us. Your involvement will not only help our team
+            members grow and learn, but also contribute to the larger robotics
+            community by inspiring and empowering the next generation of
+            robotics enthusiasts. If you're interested in becoming a mentor for
+            our robotics team, we encourage you to reach out via email. We
+            welcome mentors from all backgrounds and experiences, and we're
+            committed to providing a supportive and inclusive environment where
+            everyone can thrive. Thank you for considering this opportunity to
+            give back and make a difference in the lives of our team members.
+          </p>
+        </div>
+      </div>
+      <div class="has-text-centered">
+        <span class="title is-size-3"
+          >Enter your email to be notified about the recruitment meeting!</span
+        >
+      </div>
+      <hr
+        class="mb-3"
+        style="
+          border-top: 3px solid #095484;
+          margin-right: 20%;
+          margin-left: 20%;
+        "
+      />
+      <div
+        x-data='
+    {
+  email : "",
+  validated: false,
+  submitted: false,
+  loading: false,
+  init() {
+    // validate the email
+    this.$watch("email", () => { 
+        this.validated = this.email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+    })
+  },
+  submit(type) {
+    this.loading = true;
+    fetch("https://formsubmit.co/ajax/aamohammed4556@gmail.com", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        email: this.email,
+        type: type
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => { 
+        this.submitted = true;
+        this.loading = false;
+      });
+  },
+}   '
+        class="columns is-centered is-vcentered pt-2 pb-6"
+      >
+          <div x-show="!submitted && !loading" class="column is-narrow">
+            <input
+              x-model="email"
+              style="width: 100%"
+              type="email"
+              class="input is-large"
+              :class="validated ? 'is-dark' : 'is-link'"
+              placeholder="Email"
+            />
+          </div>
+          <div x-show="!submitted && !loading"  class="column is-narrow">
+            <button
+              @click="submit('Student')"
+              :disabled="!validated"
+              class="button is-large is-dark is-outlined"
+            >
+              Student
+            </button>
+          </div>
+          <div x-show="!submitted && !loading" class="column is-narrow">
+            <span class="title is-size-3">OR</span>
+          </div>
+          <div x-show="!submitted && !loading" class="column is-narrow">
+            <button
+              @click="submit('Mentor')"
+              :disabled="!validated"
+              class="button is-large is-dark is-outlined"
+            >
+              Mentor
+            </button>
+          </div>
+        <div class="column is-auto" x-show="loading" x-transition>
+            <div class="button is-large is-light is-loading">
 
-
-
-                <div class="navbar-menu nav-menu" style="background-color: rgba(0, 0, 0, 0);">
-                    <div class="navbar-start">
-                        <a class="navbar-item" href="index.html">
-                            Home
-                        </a>
-
-                        <a class="navbar-item" href="sponsors.html">
-                            Sponsorship
-                        </a>
-                        <a class="navbar-item" href="join.html">
-                            Join Us!
-                        </a>
-
-
-                    </div>
-                    <div class="navbar-end">
-                        <div class="navbar-item">
-                            <div class="field is-grouped">
-                                <p class="control">
-                                    <a class="bd-tw-button button is-link"
-                                        href="https://www.instagram.com/4982_olympus_robotics/">
-                                        <span class="icon">
-                                            <i class="fab fa-instagram"></i>
-                                        </span>
-                                        <span>
-                                            Instagram
-                                        </span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                                                <div class="navbar-item">
-                            <div class="field is-grouped">
-                                <p class="control">
-                                    <a data-cold 
-                                        class="bd-tw-button button is-danger"
-                                        href="https://www.youtube.com/@olympusrobotics4982">
-                                        <span class="icon">
-                                            <i class="fab fa-youtube"></i>
-                                        </span>
-                                        <span>
-                                           Youtube 
-                                        </span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navbar-item">
-                        <div class="field is-grouped">
-                            <p class="control">
-                                <a data-cold 
-                                    class="bd-tw-button button is-dark"
-                                    href="https://github.com/OlympusRobotics">
-                                    <span class="icon">
-                                        <i class="fab fa-github"></i>
-                                    </span>
-                                    <span>
-                                        Github
-                                    </span>
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </nav>
+            </div> 
+        </div>
+        <div class="column is-auto" x-show="submitted" x-transition.duration.500ms>
+            <h1 class="is-size-3">You will be notified when we are recruiting!</h1>
+        </div>
+        <div>
 
         </div>
+      </div>
+    </section>
 
-    </div>
+    <footer class="footer">
+      <div class="content center_horizontal has-text-centered">
+        <p>
+          <strong>Contact Us at: </strong>
+          <a href="mailto:4982captains@gmail.com" target="_blank"
+            >4982captains@gmail.com</a
+          >
+        </p>
+      </div>
 
-
-</body>
-
+      <div class="content center_horizontal has-text-centered">
+        <p>
+          <strong>Olympus Robotics</strong>
+          <br />
+          Copyright 2023
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
